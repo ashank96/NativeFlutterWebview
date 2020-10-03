@@ -12,9 +12,9 @@ public class FlutterWebViewInterface {
     public FlutterWebViewInterface(Context c) {
         context = c;
     }
-
+    //this method is called by flutter web before initialisation
     @JavascriptInterface
     public String getString() {
-        return "Hello from Native"; // FlutterCoreMethodHandler.getHostName();
+        return "Hello from Native"; 
     }
 }
